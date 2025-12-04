@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--Snazzy Paws Head.--> 
+<head> 
+    <title>Snazzy Paws Grooming</title>
+    <meta charset="utf-8"> 
+    <meta name="description" content="A local dog grooming service">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.min.css">
+</head>
+
+<body>
+
+    <!--This is the header used across the website-->  
+    <header class="header" role="banner">
+
+        <!--This is the navigation logo-->
+        <div id="logo">
+            <img src="images/Snazzy Paws Logo.png" alt="Snazzy Paws Logo">
+        </div>
+        
+        <!--These are the navigation links-->
+        <div class="nav-and-buttons">
+            <nav class="navigation" role="navigation" aria-label="Main Menu">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="coming-soon.html">Resources</a>
+                <a href="coming-soon.html">About Us</a>
+                <a href="gallery.html">Photos</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+
+            <!--These are the navigation buttons-->
+            <div class="buttons">
+                <a href="booking.html" target="_blank">Book Now</a>
+                <a href="coming-soon.html">Log In</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--This is the booking content-->
+    <main role="main">
+
+        <!--Plain banner to separate header from main info section-->
+        <div class="plain-banner"></div> 
+
+        <div class="booking-form">
+            <h1>Snazzy Paws Booking Form</h1>
+            <p>Please fill out all sections of the form below before submitting</p>
+        </div>
+
+        <div class="form-box">
+            <h3>Select the service you want to book:</h3>
+
+                <div class="services-grid">
+                    <!--Column 1: Standard grooming-->
+                    <div>
+                        <h3>Standard Grooming</h3>
+                        <label><input type="checkbox" name="standard[]" value="Express service"> Express service</label>
+                        <label><input type="checkbox" name="standard[]" value="Bath and Brush"> Bath and Brush</label>
+                        <label><input type="checkbox" name="standard[]" value="Haircut"> Haircut</label>
+                        <label><input type="checkbox" name="standard[]" value="Special breed cut"> Special breed cut</label>
+                        <label><input type="checkbox" name="standard[]" value="Nail trim"> Nail trim</label>
+                        <label><input type="checkbox" name="standard[]" value="Ear cleaning"> Ear cleaning</label>
+                        <label><input type="checkbox" name="standard[]" value="Teeth brushing"> Teeth brushing</label>
+                    </div>
+
+                    <!--Column 2: Packages-->
+                    <div>
+                        <h3>Grooming Packages</h3>
+                        <label><input type="checkbox" name="package[]" value="Spa package"> Spa package</label>
+                        <label><input type="checkbox" name="package[]" value="Puppy package"> Puppy package</label>
+                        <label><input type="checkbox" name="package[]" value="Senior dog package"> Senior dog package</label>
+                        <label><input type="checkbox" name="package[]" value="Full Grooming package"> Full Grooming package</label>
+                    </div>
+                </div>
+        </div>
+
+        <div class="form-box">
+                
+            <!--Add-ons-->
+            <div class="add-on">
+                <h3>Select to include an add-on:</h3>
+                <label><input type="checkbox" name="addon[]" value="De-shedding treatment"> De-shedding treatment</label>
+                <label><input type="checkbox" name="addon[]" value="Flea and tick treatment"> Flea and tick treatment</label>
+                <label><input type="checkbox" name="addon[]" value="Medicated bath"> Medicated bath</label>
+            </div>
+        </div>
+
+        <!--Booking Form-->
+        <div class="form-box">
+            <h3>Please select your preferred booking date and time</h3>
+            <input type="datetime-local" id="datetime" name="datetime">
+        </div>
+
+        <div class="form-box">
+            <h3>Your Information</h3>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name">
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="tel" id="phone" name="phone" placeholder="Phone number">
+            <p></p>
+        </div>
+
+        <div class="form-box">
+            <h3>Your Dogs Information</h3>
+            <input type="text" id="dog-name" name="dog-name" placeholder="Name">
+            <input type="text" id="breed" name="breed" placeholder="Breed">
+            <input type="number" id="age" name="age" placeholder="Age">
+           
+        </div>
+
+        <div class="submit">
+            <a href="#" target="_blank">Submit</a>
+        </div>
+    
+    </main>
+
+</body>
+</html>
